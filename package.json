@@ -1,0 +1,22 @@
+{
+  "name": "watchfile",
+  "version": "1.0.0",
+  "description": "filewatch live reload",
+  "main": "app.js",
+  "dependencies": {
+    "express": "~4.12.4",
+    "socket.io": "~1.3.5",
+    "watch": "~0.16.0",
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "reload",
+    "nodejs",
+    "file"
+  ],
+  "author": "abid famasya",
+  "license": "BSD-2-Clause"
+}

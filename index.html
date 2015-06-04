@@ -1,0 +1,13 @@
+<html>
+<body>
+<div id="out"></div>
+</body>
+<script src="/socket.io/socket.io.js"></script>
+<script>
+	var socket = io.connect("localhost:3000");
+	socket.on("ack", function(data){
+		console.log(data['message']);
+		document.getElementById("out").innerHTML = data['message'];
+	})	
+</script>
+</html>
