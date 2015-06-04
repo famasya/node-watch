@@ -11,3 +11,9 @@ I have some ideas to solve it. Just looking for a time.
 
 ###Update
 I'm switching to [fsmonitor](https://www.npmjs.com/package/fsmonitor) package and it works pretty good
+
+###How to use
+```
+npm install
+node app.js
+```
