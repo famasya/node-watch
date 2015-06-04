@@ -7,3 +7,6 @@ This is what I tried:
 + Using watch [npm watch](https://www.npmjs.com/package/watch). Still delayed.
 
 I have some ideas to solve it. Just looking for a time.
+
+###Update
+I'm switching to [fsmonitor](https://www.npmjs.com/package/fsmonitor) package and it works. Pretty good
