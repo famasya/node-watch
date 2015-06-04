@@ -9,4 +9,4 @@ This is what I tried:
 I have some ideas to solve it. Just looking for a time.
 
 ###Update
-I'm switching to [fsmonitor](https://www.npmjs.com/package/fsmonitor) package and it works. Pretty good
+I'm switching to [fsmonitor](https://www.npmjs.com/package/fsmonitor) package and it works pretty good
