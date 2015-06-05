@@ -12,11 +12,14 @@ var server = http.createServer(function(req, res){
 
 io = io.listen(server);
 io.sockets.on('connection', function(socket){
+	fs.readFile('data.txt', 'utf8', function(err,data){
+		io.sockets.emit('ack', {message:data});
+	});
 	fsmonitor.watch('/home/famasya/Works/nodejs/watchfile',null, function(change){
 		fs.readFile('data.txt', 'utf8', function(err,data){
 			//cross check
 			if(change.modifiedFiles[0] == 'data.txt'){
-			io.sockets.emit('ack', {message:data});
+				io.sockets.emit('ack', {message:data});
 			}
 		})
 	})
